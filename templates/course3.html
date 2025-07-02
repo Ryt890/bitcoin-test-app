@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What is Bitcoin?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container py-5">
+        <a href="{{ url_for('learn') }}" class="back-button">← Back</a>
+      <h1 class="mb-4 text-center">Course 3</h1>
+      <hr />
+
+      <div class="course-box">
+        <h2>Bitcoin Mining Explained</h2>
+        <hr />
+        <h3>Bitcoin mining is the process by which new bitcoins are created and transactions are confirmed and added to the blockchain.</h3>
+        <h3>It’s called “mining” because it is similar to mining for gold — it takes time, energy, and effort to extract new value from the system.</h3>
+        <h3>At the heart of Bitcoin mining is the blockchain, a public ledger that contains every transaction ever made using Bitcoin.</h3>
+        <h3>Every 10 minutes or so, all the new transactions are grouped together into a block, which miners compete to add to the chain.</h3>
+        <h3>To add a new block, miners must solve a complex mathematical puzzle — a process known as Proof of Work.</h3>
+        <h3>This puzzle isn’t something a human can solve by hand. Instead, it requires powerful computers to try millions or billions of guesses per second.</h3>
+        <h3>The first miner to solve the puzzle gets the right to add the new block to the blockchain and is rewarded with newly minted bitcoins — currently 6.25 BTC per block, as of 2025.</h3>
+        <h3>This reward is how new bitcoins are introduced into circulation, making mining a key part of the Bitcoin monetary system.</h3>
+        <h3>But solving the puzzle isn't the only task. The miner must also prove to the network that the block is valid — that all the transactions are legitimate and the rules are followed.</h3>
+        <h3>Once the block is verified, it's added to the blockchain, and the process begins again with the next batch of transactions.</h3>
+        <h3>Over time, the reward for mining a block is reduced in a process called the “halving,” which happens every 210,000 blocks (approximately every 4 years).</h3>
+        <h3>Eventually, the reward will become so small that miners will earn mainly from transaction fees paid by users.</h3>
+        <h3>Mining is not only about earning rewards; it’s also about securing the Bitcoin network.</h3>
+        <h3>The high computational cost of Proof of Work protects Bitcoin from attacks — changing a past block would require redoing all the work for that block and every block after it, which is practically impossible.</h3>
+        <h3>This makes the Bitcoin blockchain highly secure and tamper-resistant.</h3>
+        <h3>However, Bitcoin mining consumes a lot of electricity, which has led to debates about its environmental impact.</h3>
+        <h3>Some miners are switching to renewable energy sources, and others argue that Bitcoin’s energy use is justified by the value it provides: a global, decentralized, secure financial network.</h3>
+        <h3>Mining is now dominated by large-scale operations with specialized hardware called ASICs (Application-Specific Integrated Circuits), which are far more efficient than regular computers.</h3>
+        <h3>These mining farms are often located in regions where electricity is cheap, allowing them to operate profitably at scale.</h3>
+        <h3>In contrast, in Bitcoin's early days, anyone with a regular computer could mine blocks — but those days are long gone.</h3>
+        <h3>Mining has become highly competitive, with miners joining together in mining pools to combine their computing power and share rewards more reliably.</h3>
+        <h3>Despite the complexity, the core idea of mining is simple: provide computational power to validate transactions and secure the network, and in return, earn bitcoin.</h3>
+        <h3>This process ensures that Bitcoin remains decentralized — no single party controls the ledger or the creation of coins.</h3>
+        <h3>It also aligns incentives: miners are rewarded for playing by the rules and punished (by wasted electricity) if they try to cheat the system.</h3>
+        <h3>As Bitcoin grows, mining will continue to evolve, but its role as the backbone of the network’s security and currency supply will remain fundamental.</h3>
+      </div>
+    </div>
+
+    <div class="course-box mt-5">
+    <h2>Mini Test: Check Your Understanding</h2>
+    <hr />
+
+        <!-- Question 1 -->
+        <div class="mb-4">
+            <h3>1. What is the primary purpose of Bitcoin mining?</h3>
+            <button id="q1a1" class="answer-btn">To continuously create new Bitcoin wallets for users across the network.</button>
+            <button id="q1a2" class="answer-btn">To verify and add transactions to the blockchain</button>
+            <button id="q1a3" class="answer-btn">To regulate the price fluctuations of Bitcoin in cryptocurrency exchanges.</button>
+            <button id="q1a4" class="answer-btn">To provide a platform for converting Bitcoin into fiat currencies efficiently.</button>
+            <p id="feedback1" class="feedback"></p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="mb-4">
+            <h3>2. What is a "block" in the context of Bitcoin mining?</h3>
+            <button id="q2a1" class="answer-btn">A collection of verified transactions linked to the blockchain</button>
+            <button id="q2a2" class="answer-btn">A Bitcoin wallet address</button>
+            <button id="q2a3" class="answer-btn">A type of mining hardware</button>
+            <button id="q2a4" class="answer-btn">A unit of Bitcoin currency</button>
+            <p id="feedback2" class="feedback"></p>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="mb-4">
+            <h3>3. What is the “proof of work” in Bitcoin mining?</h3>
+            <button id="q3a1" class="answer-btn">An official certificate miners receive as proof of Bitcoin ownership rights.</button>
+            <button id="q3a2" class="answer-btn">A certificate for owning Bitcoin</button>
+            <button id="q3a3" class="answer-btn">A software upgrade that miners must install to maintain network compatibility.</button>
+            <button id="q3a4" class="answer-btn">A method miners use to validate transactions by solving complex puzzles</button>
+            <p id="feedback3" class="feedback"></p>
+        </div>
+
+        <!-- Free Response Question -->
+        <div class="mb-4">
+            <h3>4. Explain why Bitcoin mining is essential for network security and how it prevents fraud.</h3>
+            <textarea id="freeAnswer" rows="5" style="width:100%; font-size:1rem; padding:8px;" placeholder="Write your answer here..."></textarea>
+            <button id="showAnswerBtn" class="btn btn-blue mt-3">Show Model Answer</button>
+            <div id="modelAnswer" class="mt-3" style="display:none; background:#e8f0fe; padding:15px; border-radius:12px; color:#222; font-size:1rem;">
+            Bitcoin mining secures the network by requiring miners to solve difficult computational puzzles to add new blocks to the blockchain. This proof of work makes it expensive and difficult to alter transaction history, preventing fraud and double spending. It ensures only valid transactions are recorded, maintaining the blockchain’s integrity.
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/course3.js') }}"></script>
+
+  </body>
+</html>

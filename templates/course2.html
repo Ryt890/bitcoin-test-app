@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What is Bitcoin?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container py-5">
+        <a href="{{ url_for('learn') }}" class="back-button">← Back</a>
+      <h1 class="mb-4 text-center">Course 2</h1>
+      <hr />
+
+      <div class="course-box">
+        <h2>How Does Bitcoin Work?</h2>
+        <hr />
+        <h3>To understand how Bitcoin works, you first need to understand that it’s not controlled by any single person or institution. It’s a decentralized system powered by a global network of computers.</h3>
+        <h3>At the center of Bitcoin is a public ledger called the blockchain. This ledger records every transaction ever made using Bitcoin. Unlike a traditional bank ledger, which is private and centrally managed, the Bitcoin blockchain is public and distributed — anyone can view it, and no one can easily change it.</h3>
+        <h3>When someone sends bitcoin to another person, they broadcast a transaction to the network. This transaction includes the sender’s digital signature, the recipient’s Bitcoin address, and the amount being sent. The network of nodes (computers running Bitcoin software) checks that the sender actually owns the coins and hasn’t already spent them — a process called verification.</h3>
+        <h3>Once verified, transactions are grouped together into a "block." But before this block can be added to the blockchain, it must be confirmed by the network through a process called mining. Mining is the mechanism that ensures security, order, and consensus in the Bitcoin system.</h3>
+        <h3>Miners are participants who use powerful computers to solve complex mathematical puzzles. These puzzles require significant computational effort and energy. The first miner to solve the puzzle gets to add the new block to the blockchain and is rewarded with newly created bitcoins and transaction fees. This process is known as proof-of-work.</h3>
+        <h3>Proof-of-work serves several purposes: it makes it extremely difficult for bad actors to alter the blockchain, and it introduces new bitcoins into circulation in a predictable way. Because it’s expensive to mine and rewards are limited, miners have an economic incentive to play by the rules.</h3>
+        <h3>Once a block is added to the blockchain, it is considered permanent and unchangeable. Each block contains a reference to the block before it, creating a chain. Changing one block would require re-mining all blocks that come after it — something that would require enormous computing power and is practically impossible.</h3>
+        <h3>The Bitcoin network adjusts its mining difficulty roughly every two weeks to maintain a steady flow of new blocks — approximately one every 10 minutes. As more miners join, the puzzles become harder. If miners drop out, they become easier. This keeps the system stable and predictable.</h3>
+        <h3>Users interact with Bitcoin through software called wallets. A wallet doesn’t store actual coins but rather cryptographic keys — a public key (like an address) and a private key (like a password). Your public key allows others to send you bitcoin, while your private key is used to sign transactions and prove ownership.</h3>
+        <h3>Security in Bitcoin comes from cryptography and decentralization. Even if someone hacks one computer, they can’t change the blockchain unless they control over 50% of the network’s computing power — something called a “51% attack,” which is extremely expensive and rare.</h3>
+        <h3>Bitcoin also relies on consensus rules — everyone running the Bitcoin software agrees on the same rules. These rules define what a valid transaction is, how blocks are created, and how new coins are issued. Any changes to these rules must be adopted by the majority, making it difficult for a small group to take over.</h3>
+        <h3>In short, Bitcoin works through the combined efforts of users, miners, and nodes — each playing a role in maintaining a secure, decentralized, and transparent monetary system. It uses math, code, and incentives rather than trust in institutions to keep everything running smoothly.</h3>
+        <h3>This system has proven remarkably resilient. Over more than a decade, Bitcoin has processed billions of dollars in transactions, remained operational without interruption, and continued to attract interest from individuals, companies, and even governments around the world.</h3>
+
+      </div>
+    </div>
+
+    <div class="course-box mt-5">
+    <h2>Mini Test: Check Your Understanding</h2>
+    <hr />
+
+    <!-- Question 1 -->
+    <div class="mb-4">
+        <h3>1. What is the role of nodes in the Bitcoin network?</h3>
+        <button id="q1a1" class="answer-btn">They create new bitcoins</button>
+        <button id="q1a2" class="answer-btn">They control the price of Bitcoin</button>
+        <button id="q1a3" class="answer-btn">They verify and confirm transactions</button>
+        <button id="q1a4" class="answer-btn">They manage Bitcoin wallets</button>
+        <p id="feedback1" class="feedback"></p>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="mb-4">
+        <h3>2. What does it mean that Bitcoin is decentralized?</h3>
+        <button id="q2a1" class="answer-btn">A single company controls the network</button>
+        <button id="q2a2" class="answer-btn">Transactions are confirmed by multiple independent computers</button>
+        <button id="q2a3" class="answer-btn">Bitcoin transactions are secret</button>
+        <button id="q2a4" class="answer-btn">Only governments approve transactions</button>
+        <p id="feedback2" class="feedback"></p>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="mb-4">
+        <h3>3. How are new blocks added to the blockchain?</h3>
+        <button id="q3a1" class="answer-btn">By miners solving complex puzzles and nodes reaching consensus</button>
+        <button id="q3a2" class="answer-btn">By government approval</button>
+        <button id="q3a3" class="answer-btn">By anyone who owns Bitcoin</button>
+        <button id="q3a4" class="answer-btn">By Bitcoin developers manually</button>
+        <p id="feedback3" class="feedback"></p>
+    </div>
+
+    <!-- Free Response Question -->
+    <div class="mb-4">
+        <h3>4. Explain why Bitcoin’s decentralization improves security and trust.</h3>
+        <textarea id="freeAnswer" rows="5" style="width:100%; font-size:1rem; padding:8px;" placeholder="Write your answer here..."></textarea>
+        <button id="showAnswerBtn" class="btn btn-blue mt-3">Show Model Answer</button>
+        <div id="modelAnswer" class="mt-3" style="display:none; background:#e8f0fe; padding:15px; border-radius:12px; color:#222; font-size:1rem;">
+        Bitcoin’s decentralization means that no single authority controls the network. Instead, many independent nodes verify transactions, making it very hard to tamper with the blockchain. This distributed control increases security, prevents fraud, and builds trust without relying on any central party.
+        </div>
+    </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/course2.js') }}"></script>
+
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What is Bitcoin?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container py-5">
+        <a href="{{ url_for('learn') }}" class="back-button">← Back</a>
+      <h1 class="mb-4 text-center">Course 4</h1>
+      <hr />
+
+      <div class="course-box">
+        <h2>Bitcoin Wallets and Security</h2>
+        <hr />
+        <h3>Bitcoin wallets are digital tools that allow users to store, send, and receive bitcoins securely.</h3>
+        <h3>They are essential for interacting with the Bitcoin network because they hold the private keys that prove ownership of bitcoins.</h3>
+        <h3>There are several types of wallets, including software wallets, hardware wallets, and paper wallets, each offering different levels of security and convenience.</h3>
+        <h3>Software wallets are apps or programs you install on your computer or smartphone, making them easy to access but potentially vulnerable to malware or hacking.</h3>
+        <h3>Hardware wallets are physical devices designed to store private keys offline, providing strong protection against online threats.</h3>
+        <h3>Paper wallets involve printing your keys on paper, which keeps them offline but requires careful handling to avoid loss or damage.</h3>
+        <h3>Choosing the right wallet depends on your needs: frequent transactions may favor software wallets, while long-term storage might benefit from hardware wallets.</h3>
+        <h3>Security best practices include backing up your wallet’s private keys, using strong passwords, and enabling two-factor authentication when possible.</h3>
+        <h3>It is important never to share your private keys with anyone; losing them or exposing them means losing control over your bitcoins.</h3>
+        <h3>Wallets generate addresses — strings of letters and numbers — that you can share to receive bitcoins safely.</h3>
+        <h3>When you send bitcoins, your wallet signs the transaction with your private key, proving your ownership without revealing the key itself.</h3>
+        <h3>This cryptographic signature ensures the transaction’s authenticity and prevents fraud.</h3>
+        <h3>Many wallets now support hierarchical deterministic (HD) technology, which allows them to generate many addresses from a single seed phrase, improving privacy and convenience.</h3>
+        <h3>The seed phrase is a set of words that can restore your wallet if your device is lost or damaged, so keeping it safe is critical.</h3>
+        <h3>Some wallets offer multisignature functionality, requiring multiple private keys to authorize a transaction, increasing security for organizations or joint accounts.</h3>
+        <h3>Wallet security remains an ongoing challenge, as attackers constantly seek new ways to steal bitcoins through phishing, malware, or social engineering.</h3>
+        <h3>Regular updates, cautious behavior online, and using reputable wallets help mitigate these risks.</h3>
+        <h3>Understanding how wallets work and how to protect them is a vital step in becoming a confident Bitcoin user.</h3>
+        <h3>By securely managing your keys and transactions, you maintain full control over your money, staying true to Bitcoin’s philosophy of decentralization and individual sovereignty.</h3>
+
+      </div>
+    </div>
+
+    <div class="course-box mt-5">
+        <h2>Mini Test: Check Your Understanding</h2>
+        <hr />
+
+        <!-- Question 1 -->
+        <div class="mb-4">
+            <h3>1. What is the main purpose of a Bitcoin wallet?</h3>
+            <button id="q1a1" class="answer-btn">To securely store the private keys needed to access and manage Bitcoin funds, enabling users to send and receive bitcoins safely.</button>
+            <button id="q1a2" class="answer-btn">To act as a centralized online account where bitcoins are held and managed by financial institutions or third-party services for users.</button>
+            <button id="q1a3" class="answer-btn">To mine new bitcoins by solving cryptographic puzzles and adding new blocks to the blockchain.</button>
+            <button id="q1a4" class="answer-btn">To convert bitcoins into various fiat currencies automatically based on real-time exchange rates and market trends.</button>
+            <p id="feedback1" class="feedback"></p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="mb-4">
+            <h3>2. What is a cold wallet?</h3>
+            <button id="q2a1" class="answer-btn">A physical device that generates bitcoins through specialized hardware mining operations, enhancing network security.</button>
+            <button id="q2a2" class="answer-btn">A Bitcoin wallet hosted on cloud servers, providing easy access from multiple devices but with increased exposure to cyberattacks.</button>
+            <button id="q2a3" class="answer-btn">A type of Bitcoin wallet that is kept offline to protect private keys from hacking and unauthorized access.</button>
+            <button id="q2a4" class="answer-btn">An online service that exchanges bitcoins instantly for other cryptocurrencies or fiat money with minimal transaction fees.</button>
+            <p id="feedback2" class="feedback"></p>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="mb-4">
+            <h3>3. What are private keys in the Bitcoin system?</h3>
+            <button id="q3a1" class="answer-btn">Complex cryptographic strings generated by Bitcoin’s network that are publicly visible but cannot be used without proper authentication by the owner.</button>
+            <button id="q3a2" class="answer-btn">Secret codes that prove ownership of bitcoins and are required to authorize transactions.</button>
+            <button id="q3a3" class="answer-btn">Unique digital signatures stored on the blockchain that guarantee the authenticity of every Bitcoin transfer made between wallets.</button>
+            <button id="q3a4" class="answer-btn">Special security protocols integrated into wallets that provide multi-factor authentication and ensure protection against hacking attempts.</button>
+            <p id="feedback3" class="feedback"></p>
+        </div>
+
+        <!-- Free Response Question -->
+        <div class="mb-4">
+            <h3>4. Explain why securing your private keys is crucial for protecting your Bitcoin. What risks are involved if they are lost or stolen?</h3>
+            <textarea id="freeAnswer" rows="5" style="width:100%; font-size:1rem; padding:8px;" placeholder="Write your answer here..."></textarea>
+            <button id="showAnswerBtn" class="btn btn-blue mt-3">Show Model Answer</button>
+            <div id="modelAnswer" class="mt-3" style="display:none; background:#e8f0fe; padding:15px; border-radius:12px; color:#222; font-size:1rem;">
+                Securing your private keys is crucial because they are the only way to access and control your bitcoins. If someone else obtains your private keys, they can steal your bitcoins without your consent. Conversely, if you lose your private keys, you permanently lose access to your bitcoins, as there is no way to recover them. Therefore, protecting private keys ensures your Bitcoin remains safe and under your control.
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/course4.js') }}"></script>
+
+
+  </body>
+</html>

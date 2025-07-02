@@ -1,0 +1,101 @@
+level,question,choice1,choice2,choice3,choice4,correct
+1,Who is credited with creating Bitcoin?,Elon Musk,Vitalik Buterin,Satoshi Nakamoto,Michael Saylor,C
+1,What is the smallest unit of Bitcoin called?,Microbit,Nakamoto,Bitlet,Satoshi,B
+1,1 Bitcoin is equal to how many satoshis?,"100,000","1,000,000","10,000,000","100,000,000",D
+1,When was the Bitcoin white paper released?,2005,2008,2011,2015,B
+1,Which of the following is true about Bitcoin?,It is controlled by a central bank,It is a physical coin,It is a decentralized digital currency,It is backed by gold,C
+1,What is the purpose of Bitcoin mining?,To create new fiat currency,To send emails,To validate transactions and create new bitcoins,To make gold coins,C
+1,How often does the Bitcoin block reward halve?,Every 1 year,Every 2 years,Every 3 years,Every 4 years,D
+1,How many blocks before Bitcoin's mining reward is halved?,"10,000 blocks","100,000 blocks","210,000 blocks","1,000,000 blocks",C
+1,What is the maximum supply of bitcoin?,10 million,21 million,100 million,Unlimited,B
+1,Which technology is Bitcoin built on?,Cloud computing,Blockchain,AI algorithms,Sensor technology,B
+1,What is the name of Bitcoin's first block?,Genesis Block,Alpha Block,Nakamoto Block,Origin Block,A
+1,What system records Bitcoin transactions?,Bank ledger,Blockchain,Central server,User's own USB memory,B
+1,"Where does the name ""satoshi"" come from?",The developer's name,Japanese currency,A movie character,A bird's name,A
+1,Who is Satoshi Nakamoto?,Identity is unknown,Plan B,Japanese government,Michael Saylor,A
+1,Who runs the Bitcoin network?,Central bank,Government agency,Decentralized network,Google,C
+1,What does a block in blockchain contain?,Photos,Audio data,Transaction data,Passwords,C
+1,What was bought in Bitcoin's first real-world transaction?,Pizza,Coffee,Book,Michael Saylor,A
+1,How many Bitcoins were paid for two pizzas?,1 BTC,10 BTC,100 BTC,"10,000 BTC",D
+1,What intermediaries are needed to send Bitcoin?,Bank,Trust company,Credit card company,None,D
+1,What does a Bitcoin address look like?,Numbers only,Letters only,Alphanumeric,Alphanumeric with symbols,C
+1,What is the function of a hash function?,Shows encrypted address,Summarizes data,Speeds up connection,Plays music,B
+1,What does a miner do?,Processes remittances,Solves cryptographic puzzles,Sells goods,Control the Bitcoin system,B
+1,What is the reward for the miner who first validates a block?,New Bitcoins only,Fees only,New Bitcoins and fees,Authority to be involved in management,C
+1,Can anyone use Bitcoin?,Yes,No,Depends on the country,Not minors,A
+1,Is Bitcoin resistant to inflation?,Yes,No,Depends on the currency,Depends on the situation,A
+1,Who can view Bitcoin's ledger?,Central bank only,Registered users only,Only those who have sent Bitcoin remittances before.,Anyone,D
+1,What is an advantage of a decentralized network?,Resistant to attacks,Easy to manage,Lower labor costs,Stronger signal,A
+1,What is the average time to generate a block?,1 minute,10 minutes,30 minutes,1 hour,B
+1,What happens to recorded Bitcoin transactions?,Can be deleted,Can be edited,Generally cannot be changed,Expire over time,C
+1,How is Bitcoin Developed?,Open source,Conducted in secret,By the U.S. government,Monopolized by a private company,A
+1,"What is a Bitcoin ""wallet""?",A place to temporarily store cash before converting it to bitcoin,A bank account,Software for managing crypto,Pocket,C
+1,How much electricity does mining consume?,Zero,Very little,Small amount,A lot,D
+1,What is Bitcoin aiming to replace?,Social networks,Email,Online stores,Fiat currency,D
+2,What consensus mechanism does Bitcoin use?,Pos,PBFT,Dpos,PoW,D
+2,What does PoW stand for?,Proof of walet,Power of Work,Proof of Work,Process of Work,C
+2,How is a private key used?,To sign transactions,To generate blocks,To synchronize the blockchain,To connect nodes,A
+2,Who can see a public key?,Only the sender,Only the receiver,Certification authority,Anyone,D
+2,What is the typical format of a private key?,64-character hexidecimal,10-digit number,QR code only,Password string,A
+2,What is generated from a public key?,Seed phrase,Transaction,Bitcoin address,Block ID,C
+2,Which of the following is not a valid Bitcoin address format?,P2PIP (starts with 7),P2PKH (starts with 1),P2SH (starts with 3),Bech32 (start with bc1),D
+2,What is seed phrase?,A list of words to restore a wallet,Alias for an address,Signature for transactions,Private key of the blockchain,C
+2,How many words are typically in a seed phrase?,6 words,12 words,21 words,42 words,B
+2,What do you call a wallet that is connected to the internet?,Cold wallet,Hot wallet,Online wallet,Wet wallet,B
+2,What is a feature of multi-signature (multisig)?,One signature authenticates multiple users,Multiple private keys are required for signing,Combines fingerprint and facial recognition,Short for multiple accounts,B
+2,What is the characteristic of a cold wallet?,Enables instant transfers,Always online,Offline storage like hardware,Predicts market prices,C
+2,What does micro-payment refer to?,Transfers of hundreds of thousands of yen,High-speed trading,Small amount transfers,Rewards for miners,C
+2,What is a feature of the Lightning Network?,Instant off-chain transactions,For large-scale payments only,Known for delayed confirmations,Integrates with bank APIs,A
+2,What is an essential component of the Lightning Network?,Oracle,Payment channels,Master nodes,NFTs,B
+2,What is the main role of a crypto exchange?,Mining,Printing Bitcoin,Facilitating trades,Managing development funds,C
+2,What is a second-layer solution?,Directly modifies the blockchain,Adds functionality on top of the main chain,Compresses blocks,Increases block numbers,B
+2,What is an advantage of multisig?,No fees,Faster processing,Enhanced security,Helps generate blocks,C
+2,Which of the following is a cold wallet?,Email address,Mobile app,Hardware wallet,Web wallet,C
+2,"What does ""3-of-5"" mean in a multisig wallet?",3 out of 5 people must sign,3 keys manage 5 addresses,3 types of signatures,3 signatures per person,A
+2,What is a risk associated with hot wallets?,Slow speed,Connection errors,Connot send funds,Hacking risk,D
+2,Can you derive a private key from a public key?,Nearly impossible,Possible in minutes,Possible if hashed,Very easy,A
+2,What is possible with the Lightning Network?,Bank transfers,Credit card payments,"Fast, small off-chain payments",Smart contracts,C
+2,What is a node?,Name of a mobile app,Computer that stores the blockchain,Mining equipment,Cryptocurrency exchange,B
+2,What is a proper way to manage a seed phrase?,Engrave on a metal plate and store it.,Save it in a text file,Post it on Social media,Save to cloud storage,A
+2,What is the function of a wallet?,Issue Bitcoin,Generate blocks,Store and manage crypto assets,Distribute addresses,C
+2,What is a common use of P2SH addresses?,Multisig,Smart contracts,Bitcoin Cash,Bitcoin NFTs,A
+2,What is a feature of a P2PKH address?,"Starts with ""3""","Start with ""1""",Dynamically changes,Used in second-layer solutions,B
+2,"In blockchain, what is a ""nonce""?",Random meaningless data,Another name for transaction ID,Type of key,Value ajusted during mining,D
+2,"Which type of wallet is considered ""hot"" and is generally connected to the internet?",Hardware Wallet,Mobile Wallet,Paper Wallet,OpenDime,B
+2,Which wallet allows full node validation and gives users full control over their private keys and blockchain data?,Bitcoin Core,Trust Wallet,Exodus,Wallet of Satoshi,A
+2,Which of the following is considered a software wallet rather than a hardware wallet?,Ledger Nano,Electrum,Coldcard,OpenDime,B
+2,Which wallet below is classified as a software wallet and runs on desktop or mobile?,Coldcard,Wasabi Wallet,OpenDime,Trezor,B
+3,What is the most important reason Bitcoin has no central authority?, It reduces maintenance costs.,It resists censorship and political interference.,It allows open mining.,It simplifies fiat currency conversion.,B
+3,Why does Bitcoin have a maximum supply limit?,To reduce miner incentives,To limit block size,To prevent inflation and preserve value,Due to Satoshi's technical limitations,C
+3,What is the purpose of competition in Bitcoin mining?,To increase energy usage,To speed up transactions,To distribute miner rewards,To ensure fairness and security in block creation,D
+3,Why is self-custody of your private key considered crucial in Bitcoin?,It improves transaction speed,It provides government insurance,It gives true ownership without relying on third parties,It’s safe to share your private key,C
+3,Why is immutability important in a blockchain?,To easily fix errors,To protect recorded transactions from tampering,To comply with regulations,To delete outdated data,B
+3,Why is it important that anyone can run a node?,To increase transaction volume,To prevent centralization and ensure network health,To enable faster confirmations,To boost mining efficiency,B
+3,"What does ""programmatic issuance"" of Bitcoin mean?",Governments approve its issuance,The supply schedule is transparent and predictable,Supply changes dynamically,It simplifies taxation,B
+3,How can Bitcoin transactions be public while preserving user privacy?,All transactions are encrypted,IP addresses are hidden,Transactions are deleted over time,"Users are identified only by public keys, not names",D
+3,Why are second-layer solutions like Lightning Network necessary?,To increase security,"To enable fast, cheap off-chain microtransactions",To disable smart contracts,To support centralization,B
+3,Why is Bitcoin called not just a technology but also a movement?,It’s built by volunteers,It involves global developers,It challenges traditional finance and redefines value,It is not officially approved,C
+3,What best describes Bitcoin’s monetary policy compared to fiat currencies?,It changes with economic needs,It is defined by market demand,It is managed by miners,It is fixed and cannot be changed easily,D
+3,"Why is the phrase ""Not your keys, not your coins"" important in Bitcoin?",To emphasize the importance of holding your private keys,To support regulated exchanges,To encourage centralized wallets,To promote NFT ownership,A
+3,Why does Bitcoin's decentralization improve its security?,It lowers mining rewards,It creates redundancy and removes single points of failure,It reduces internet usage,It speeds up transaction time,B
+3,How does Proof of Work help maintain trust in the Bitcoin network?,It encourages inflation,It makes altering transaction history computationally infeasible,It increases transaction speed,It gives mining control to the richest users,B
+3,Why is Bitcoin considered resistant to inflation?,Because the total supply is limited and predictable,Because governments regulate it,Because new coins can be printed when needed,Because it is backed by gold,A
+3,"In Bitcoin, what does miner signaling during a protocol upgrade (such as Taproot or SegWit) represent?",A mechanism to automatically increase the block size limit through voting,A guarantee that all users agree on a hard fork before implementation,A process where nodes automatically update to the latest software version,A method for miners to indicate their support for a proposed soft fork by including a signal in the blocks they mine,D
+3,"In an era of exponential technological change and increasing financial volatility, what is one argument for adopting Bitcoin as a long-term asset?",Its price is stable and does not react to global events,"Its supply is fixed and it operates outside traditional financial systems, offering predictability amidst chaos",It is controlled by central banks to counteract volatility,It automatically adjusts its monetary policy to match economic growth,B
+4,"In the modern economy, how does currency debasement typically occur?",By changing banknote designs to improve anti-counterfeiting measures,By increasing tax enforcement to eliminate the use of cash,By increasing foreign reserves to weaken domestic trust in currency,"By central banks excessively issuing currency, reducing purchasing power",D
+4,What does the Cantillon Effect describe?,An acceleration of the money velocity leading to equal wealth distribution,A proportional price increase across the economy due to new money,A phenomenon where those closest to new money benefit before the rest,A theory where prices adjust uniformly immediately after money creation,C
+4,Which best represents the structure of a Ponzi scheme?,A high-risk reward model based on speculative short-term trading,A structure where returns to earlier investors are paid with new investors’ funds,A revenue strategy using derivatives to hedge losses,A cashback mechanism based on frequent product purchases,B
+4,Why do some critics argue that fiat currencies resemble Ponzi schemes?,Because they don’t offer interest-bearing features,Because they don’t depend on tax revenues for circulation,"Because new currency issuance is used to pay off prior debt, like in Ponzi models",Because fiat notes deteriorate physically and lose trust,C
+4,Who are considered “unbanked”?,People who have bank accounts but not credit cards,Individuals who only use cryptocurrencies for daily life,Elderly people who use only cash for all payments,People lacking access to formal financial services,D
+4,Why is Bitcoin considered a tool for promoting financial inclusion?,Because it requires no banking infrastructure and only a smartphone,Because it offers higher interest rates and inflation resistance,Because it can centrally unify credit scores across borders,Because it can easily be cashed out in remote regions,A
+4,What is a typical consequence of fiat currency collapse?,A continuous rise in stock prices,International bodies buying up domestic currency,A rapid rise in prices causing a collapse in monetary trust,An increase in currency value leading to deflation,C
+4,What typically happens when a government prints excessive currency?,Government bond interest drops to zero,Asset bubbles deflate and stabilize the economy,"Hyperinflation occurs, rendering the currency nonfunctional","Fiscal balance improves, leading to growth",C
+4,Why is Bitcoin seen as enabling monetary decentralization?,Because its price is always stable,"Because it has a fixed issuance cap, independent of government control",Because it has built-in smart contract functionality,Because all transactions are completely anonymous,B
+4,What does “defunding war through Bitcoin” mean?,Using crypto to supplement military budgets,"Increasing transparency in arms trade, allowing looser regulations",Automatically managing military funds via smart contracts,Making it harder for governments to finance wars through inflation or debt ,D
+4,What is a primary reason Bitcoin may disrupt the traditional funding mechanisms of war?,Its volatility prevents governments from storing wealth.,Bitcoin is primarily used for social welfare programs.,Military alliances now require digital wallets.,It automatically diverts taxes away from defense budgets.,A
+4,How might a Bitcoin-based financial system influence government spending?,"It limits the ability to create money through debt, constraining wartime budgets.",It enables targeted inflation for military spending.,It allows for faster budget increases through programmable spending.,It automates defense procurement through smart contracts.,A
+4,Why would governments find it harder to hide military expenditures in a Bitcoin-based economy?,Bitcoin transactions are fully anonymous.,Blockchain data is immutable and publicly accessible.,Central banks control Bitcoin wallets.,All spending requires miner approval.,B
+4,What aspect of fiat currency allows for easier war financing compared to Bitcoin?,Unlimited issuance through central banks,Strict auditing of military expenses,Blockchain-based verification of transactions,Algorithmic control of monetary policy,A
+4,How could Bitcoin influence citizen oversight of public spending?,Only government miners can validate public expenditures,Spending data is stored in private chains,Taxes are calculated via secret smart contracts,All public addresses can be programmed to allow real-time citizen monitoring,D
+4,Why might authoritarian regimes resist the adoption of Bitcoin?,It relies on biometric data for identity,It prevents citizens from earning income,"It decentralizes monetary control, reducing state power",It eliminates all tax collection mechanisms,C
+4,How do the Keynesian and Austrian schools of economics fundamentally differ in their approach to economic recessions?,"Keynesians advocate for monetary tightening during recessions, while Austrians support large-scale fiscal stimulus.",Both schools agree that central banks should increase money supply during downturns to stabilize prices.,"Austrians recommend increasing taxes during recessions, while Keynesians advocate cutting government spending.","Keynesians emphasize government intervention to boost demand, while Austrians argue recessions are necessary corrections caused by prior distortions.",D

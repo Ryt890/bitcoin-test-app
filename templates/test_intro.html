@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+        <title>btctest</title>
+    </head>
+
+
+    <body>
+        <nav>
+            <a href="{{ url_for('index') }}" style="font-size:25px">Bitcoin Edu</a>
+            <div>
+                <a href="{{ url_for('learn') }}">Learn Bitcoin</a>
+                <a href="{{ url_for('test_intro') }}">Take the Test</a>
+            </div>
+        </nav>
+        <div class="container py-5">
+            <a href="{{ url_for('index') }}" class="back-button">← Back</a>
+            <h1 class="mb-4 text-center">Take The Test</h1>
+            <p class="lead text-center mb-5">Choose the level of test you'd like to take. Each test is timed and includes multiple-choice questions.</p>
+
+            <div class="row text-center">
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4 shadow-sm">
+                        <h2>The Bitcoin Test</h2>
+                        <p>Beginner to intermediate level questions (Level 1–3)</p>
+                        <p><strong>Time limit:</strong> 15 minutes</p>
+                        <a href="{{ url_for('test_confirm', test_type='basic') }}" class="btn btn-blue mt-3">Start Basic Test</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4 shadow-sm">
+                        <h2>The Advanced Bitcoin Test</h2>
+                        <p>All levels, including advanced social/economic topics (Level 1–4)</p>
+                        <p><strong>Time limit:</strong> 25 minutes</p>
+                        <a href="{{ url_for('test_confirm', test_type='advanced') }}" class="btn btn-blue mt-3">Start Advanced Test</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+        <title>btcedu</title>
+    </head>
+
+
+    <body>
+        <nav>
+            <a href="{{ url_for('index') }}" style="font-size:25px">Bitcoin Edu</a>
+            <div>
+                <a href="{{ url_for('learn') }}">Learn Bitcoin</a>
+                <a href="{{ url_for('test_intro') }}">Take the Test</a>
+            </div>
+        </nav>
+        <section class="hero">
+            <h1 class="gradient-text1">Master Bitcoin with Confidence</h1>
+            <p>Learn the fundamentals. Test your knowledge. Earn your certificate.</p>
+            <a href="{{ url_for('learn') }}" class="btn btn-blue mt-4 mx-1">Start Learning</a>
+            <a href="{{ url_for('test_intro') }}" class="btn btn-blue mt-4 mx-1">Take the Test</a>
+        </section>
+
+        <hr>
+
+        <div class="gradient-wrapper">
+            <div class="gradient-box">
+                <h1 style="margin-bottom: 24px;">What You’ll Learn</h1>
+                <h4>You’ll explore how Bitcoin works, why it matters, and how it empowers people globally through decentralization.</h4>
+            </div>
+        </div>
+        <hr>
+
+        <section class="why-bitcoin-section">
+        <h1>Why Learn About Bitcoin?</h1>
+        <div class="reasons-grid">
+            <div class="reason-card">
+                <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4c8.svg" alt="Chart Increasing" width="30" style="margin-bottom: 15px;"/>
+                <h3>Global Adoption</h3>
+                <p>Bitcoin is now legal tender in some countries and accepted by global companies.</p>
+            </div>
+            <div class="reason-card">
+                <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg" alt="Globe Europe-Africa" width="30" style="margin-bottom: 15px;"/>
+                <h3>Financial Inclusion</h3>
+                <p>It gives access to money for billions without bank accounts worldwide.</p>
+            </div>
+            <div class="reason-card">
+                <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg" alt="Brain" width="30" style="margin-bottom: 15px;"/>
+                <h3>Digital Sovereignty</h3>
+                <p>Learning Bitcoin builds awareness of how to control your own wealth and data.</p>
+            </div>
+            <div class="reason-card">
+                <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f510.svg" alt="Lock with Key" width="30" style="margin-bottom: 15px;"/>
+                <h3>Privacy & Security</h3>
+                <p>In a surveillance age, Bitcoin helps protect your financial freedom.</p>
+            </div>
+        </div>
+
+        <div class="quote-box">
+            <h2 class="white-heading" style="margin-bottom: 30px;">Famous Quotes</h2>
+            <div class="quote-content scroll-fade">
+                <p class="fancy-quote">“You don't change Bitcoin. Bitcoin changes you.”</p>
+                <p class="quote-author">— Max Keiser</p>
+            </div>
+            <div class="quote-content scroll-fade">
+                <p class="fancy-quote">“If you don't believe it or don't get it, I don't have the time to try to convince you, sorry.”</p>
+                <p class="quote-author">— Satoshi Nakamoto</p>
+            </div>
+            <div class="quote-content scroll-fade">
+                <p class="fancy-quote">“Bitcoin is not just a currency. It’s a movement.”</p>
+                <p class="quote-author">— Andreas M. Antonopoulos</p>
+            </div>
+            <div class="quote-content scroll-fade">
+                <p class="fancy-quote">“There's a crypto asset that's called Bitcoin. There is no second best.”</p>
+                <p class="quote-author">— Michael Sailor</p>
+            </div>
+        </div>
+
+        <h1 class="gradient-text5">Don't get left behind</h1>
+        <h2>The future of money is already here. Be part of the change.</h2>
+        </section>
+        <hr style="margin-bottom: 60px;">
+
+        <div class="container text-center">
+            <h1>How You’ll Learn</h1>
+            <h4 class="text-muted" style="margin-top: 20px;">Our learning journey is simple, clear, and designed for everyone.</h4>
+            <h4 class="text-muted" style="margin-bottom: 40px;">Each course contains concise lessons and quick quizzes to solidify your understanding.</h4>
+
+        </div>
+
+        <!-- Section 1 -->
+        <div class="course-box how-learn-box scroll-fade">
+            <div class="learn-text">
+                <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4da.svg" alt="Open Book icon" width="48" class="mb-3" />
+                <h2 class="gradient-text2">6 Chapters</h2>
+                <h4>The journey is divided into six carefully crafted chapters, each focusing on a key aspect of Bitcoin — from the basics to its deeper social and technological implications.</h4>
+            </div>
+            <img src="{{ url_for('static', filename='images/learn-image3.png') }}" alt="Chapters" class="learn-image" />
+        </div>
+
+        <!-- Section 2 -->
+        <div class="course-box how-learn-box scroll-fade">
+            <div class="learn-text">
+                <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4d6.svg" alt="Book icon" width="48" class="mb-3" />
+                <h2 class="gradient-text3">Read</h2>
+                <h4>Engage with clear, beginner-friendly explanations to build a strong foundation in Bitcoin.</h4>
+            </div>
+            <img src="{{ url_for('static', filename='images/learn-image1.png') }}" alt="Reading" class="learn-image" />
+        </div>
+
+        <!-- Section 3 -->
+        <div class="course-box how-learn-box scroll-fade">
+            <div class="learn-text">
+                <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3af.svg" alt="Target icon" width="48" class="mb-3" />
+                <h2 class="gradient-text4">Practice</h2>
+                <h4>Test your understanding with multiple-choice and written-answer questions at the end of each chapter.</h4>
+            </div>
+            <img src="{{ url_for('static', filename='images/learn-image2.png') }}" alt="Quiz" class="learn-image" />
+        </div>
+
+        <!-- Section 4 -->
+        <div class="course-box how-learn-box scroll-fade">
+            <div class="learn-text">
+                <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4dd.svg" alt="Memo icon" width="48" class="mb-3" />
+                <h2 class="gradient-text2">Final Test</h2>
+                <h4>Take the final exam to earn your certificate and prove your mastery of Bitcoin fundamentals.</h4>
+            </div>
+            <img src="{{ url_for('static', filename='images/learn-image4.png') }}" alt="Final Test" class="learn-image" />
+        </div>
+
+        <!----------------------------------------------------------->
+
+
+        <hr style="margin-top: 80px;">
+        <section class="container my-5">
+            <div class="content-wrapper mx-auto">
+                <!-- SECTION 1: Two Tests -->
+                <h1 class="container text-center" style="margin-bottom: 60px; margin-top: 60px;">Two Types of Bitcoin Tests</h1>
+
+                <!-- Bitcoin Test -->
+                <div class="card mb-5 p-4 shadow-sm">
+                    <h2 class="mb-3">Bitcoin Test</h3>
+                    <h3><strong>Time:</strong> 15 minutes　｜　<strong>Questions:</strong> 20</p>
+                    <h4>This test covers beginner to intermediate concepts (Level 1–3):</h4>
+                    <hr>
+                    <h4>① Beginner Knowledge: 10 questions</h4>
+                    <h4>② Intermediate Knowledge: 5 questions</h4>
+                    <h4>③ Advanced Knowledge: 5 questions</h4>
+                    <a href="{{ url_for('test_intro') }}" class="btn btn-blue mt-4 mx-1">Take the Test</a>
+                </div>
+
+                <!-- Advanced Bitcoin Test -->
+                <div class="card mb-5 p-4 shadow-sm">
+                    <h2 class="mb-3">Bitcoin Advanced Test</h3>
+                    <h3><strong>Time:</strong> 25 minutes　｜　<strong>Questions:</strong> 25</h3>
+                    <h4>This test covers all levels including advanced social and economic topics (Level 1–4):</h4>
+                    <hr>
+                    <h4>① Beginner Knowledge: 5 questions</h4>
+                    <h4>② Intermediate Knowledge: 5 questions</h4>
+                    <h4>③ Advanced Knowledge: 5 questions</lh4>
+                    <h4>④ Strategic Thinking: 10 questions</h4>
+                    <a href="{{ url_for('test_intro') }}" class="btn btn-blue mt-4 mx-1">Take the Test</a>
+                </div>
+
+                <!-- SECTION 2: Sample Questions -->
+                <h1 class="text-center" style="margin-bottom: 60px;">Sample Questions</h1>
+
+                <div class="card mb-4 p-4 shadow-sm">
+                    <h2 class="mb-3">Bitcoin Test</h2>
+                    <div class="bg-light p-3 rounded mb-2">
+                        <h4><strong>Q:</strong> Who created Bitcoin?</h4>
+                        <hr>
+                        <h4><strong>A:</strong> Satoshi Nakamoto</h4>
+                    </div>
+                    <div class="bg-light p-3 rounded">
+                        <h4><strong>Q:</strong> How many satoshis are in 1 BTC?</h4>
+                        <hr>
+                        <h4><strong>A:</strong> 100,000,000</h4>
+                    </div>
+                </div>
+
+                <div class="card mb-5 p-4 shadow-sm">
+                    <h2 class="mb-3">Bitcoin Advanced Test</h2>
+                    <div class="bg-light p-3 rounded mb-2">
+                        <h4><strong>Q:</strong> What is the Cantillon Effect?</h4>
+                        <hr>
+                        <h4><strong>A:</strong> It explains how money creation benefits those closest to the source of new money.</h4>
+                    </div>
+                    <div class="bg-light p-3 rounded">
+                        <h4><strong>Q:</strong> What is a Ponzi scheme?</h4>
+                        <hr>
+                        <h4><strong>A:</strong> A fraud that pays earlier investors with funds from newer investors.</h4>
+                    </div>
+                </div>
+
+                <!-- SECTION 3: Call to Action -->
+                <h2 class="text-center mb-4 display-5">Are You Ready?</h2>
+                <p class="text-center lead">Challenge yourself and earn a personalized certificate based on your knowledge. Good luck!</p>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-container">
+                <p class="footer-title">Bitcoin Academy</p>
+                <p class="footer-description">Empowering the world to understand Bitcoin — from basics to advanced insights.</p>
+                <p class="footer-links">
+                <a href="/">Home</a> |
+                <a href="/about">About</a> |
+                <a href="/learn">Learn</a> |
+                <a href="/test_intro">Test</a>
+                </p>
+                <p class="footer-email">Email: <a href="mailto:info@bitcoinacademy.com">info@bitcoinacademy.com</a></p>
+                <p class="footer-copy">© 2025 Bitcoin Academy. All rights reserved.</p>
+            </div>
+        </footer>
+
+
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+                observer.unobserve(entry.target);
+            }
+            });
+        }, {
+            threshold: 0.2,
+        });
+
+        document.querySelectorAll('.scroll-fade').forEach(el => observer.observe(el));
+        });
+        </script>
+
+
+    </body>
+</html>
