@@ -13,8 +13,6 @@ From a technical standpoint, the app is built using Flask (a Python web framewor
 
 This project reflects my interest in web development and crypto-related technologies. It also demonstrates my ability to build and deploy a full-stack application from scratch, including designing the UI/UX, handling data flow, managing user sessions, and integrating third-party libraries like ReportLab for PDF generation. It was both a challenging and rewarding experience.
 
-# The structure of this function was inspired by suggestions from ChatGPT.
-
 ### File Overview
 
 - `app.py`
@@ -34,3 +32,5 @@ This project reflects my interest in web development and crypto-related technolo
 
 - `README.md`
   This documentation file describing the project, including its structure, usage, and purpose.
+  
+#### The structure of this function was inspired by suggestions from ChatGPT.
